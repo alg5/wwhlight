@@ -18,6 +18,7 @@ services:
             - %core.root_path%
             - %core.php_ext%
             - @auth
+            - @cache
         tags:
             - { name: event.listener }
     alg.wwhlight.cron.task.wwhlight_calc_record:
